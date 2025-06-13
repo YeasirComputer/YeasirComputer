@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasir Computer</title>
+    <link rel="shortcut icon" href="https://lh3.googleusercontent.com/a/ACg8ocL8jkcdGmsAkSacOWyxVvBa246LHEHi2LRFmtjOYDFd959kBsE=s96-c-rg-br100" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-green-900 text-white py-6 fade-up">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="https://img.icons8.com/ios-filled/50/computer.png" alt="Logo" class="w-10 h-10">
+        <h1 class="text-2xl font-bold">Yeasir Computer</h1>
+      </div>
+  
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-4 sticky top-0 z-50" >
+        <a href="#" class="hover:underline">হোম</a>
+        <a href="#services" class="hover:underline">সেবা</a>
+        <a href="#contact" class="hover:underline">যোগাযোগ</a>
+        <a href="#faq" class="hover:underline">প্রশ্নোত্তর</a>
+      </nav>
+  
+      <!-- Hamburger Button (Mobile) -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="focus:outline-none">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 mt-4 space-y-2">
+      <a href="#" class="block text-white hover:underline">হোম</a>
+      <a href="#services" class="block text-white hover:underline">সেবা</a>
+      <a href="#contact" class="block text-white hover:underline">যোগাযোগ</a>
+      <a href="#faq" class="block text-white hover:underline">প্রশ্নোত্তর</a>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="bg-green-100 text-white text-center py-0 fade-up ">
+    <!-- <h2 class="text-4xl font-bold mb-4">YEASIR COMPUTER’S</h2>
+    <p class="text-xl">Digital Service, Trusted Solution</p>
+    <p class="text-md mt-2">Gouripur, Lapur, Natore</p> -->
+    <img src="./img/Banner.png" alt="" class="w-full h-auto">
+</section>
+    
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-white fade-up">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">আমাদের সেবা</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
+          <img src="https://land.gov.bd/_next/image?url=https%3A%2F%2Flsg-portal-admin.land.gov.bd%2Fstorage%2Fservices%2F1732162861.jpg&w=1080&q=75" alt="" class="mx-auto mb-4 w-20 h-20">
+          <a href="https://mutation.land.gov.bd/" target="_blank"> <h3 class="font-bold text-lg"> নামজারী</h3></a>
+         
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
+          <img src="https://land.gov.bd/_next/image?url=https%3A%2F%2Flsg-portal-admin.land.gov.bd%2Fstorage%2Fservices%2F1732789801.jpg&w=1080&q=75" alt="" class="mx-auto mb-4 w-20 h-20" >
+          <a href="https://portal.ldtax.gov.bd/" target="_blank"><h3 class="font-bold text-lg">ভূমি উন্নয়ন কর</h3> </a>
+          
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
+          <img src="https://land.gov.bd/_next/image?url=https%3A%2F%2Flsg-portal-admin.land.gov.bd%2Fstorage%2Fservices%2F1732941934.jpg&w=1080&q=75" alt="" class="mx-auto mb-4 w-20 h-20" >
+            <a href="https://dlrms.land.gov.bd/"><h3 class="font-bold text-lg">রেকর্ড ডাউনলোড</h3></a>
+          
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
+          <img src="https://img.icons8.com/pastel-glyph/64/photocopy.png" alt="" class="mx-auto mb-4">
+          <h3 class="font-bold text-lg">ফটোকপি ও স্টেশনারী</h3>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
+          <img src="https://img.icons8.com/ios-filled/50/birth-date.png" alt="" class="mx-auto mb-4">
+          <h3 class="font-bold text-lg">জন্ম ও মৃত্যু নিবন্ধন</h3>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
+          <img src="https://img.icons8.com/ios-filled/50/camera.png" alt="" class="mx-auto mb-4">
+          <h3 class="font-bold text-lg">ছবি তোলা</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="py-16 bg-gray-100 fade-up">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">যোগাযোগ করুন</h2>
+    <p class="mb-4">আপনার যেকোনো প্রশ্ন বা সেবা জন্য নিচে ফর্মটি পূরণ করুন।</p>
+  <div class="w-full max-w-3xl aspect-[4/3] mx-auto">
+  <iframe class="w-full h-full"
+    src="https://docs.google.com/forms/d/e/1FAIpQLScHlmNs6FGOXMI9A4SybDVbOSFQpq3YVu77hDmnLZZdEQVx0w/viewform?embedded=true"
+    frameborder="0" marginheight="0" marginwidth="0">লোড হচ্ছে…</iframe>
+</div>
+
+</section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-16 pt- bg-white fade-up mt-0  ">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">প্রশ্ন ও উত্তর (FAQ)</h2>
+      <div class="space-y-4">
+        <div class="border rounded-lg">
+          <button class="w-full px-4 py-3 text-left font-semibold flex justify-between items-center faq-toggle">
+            নামজারী সংক্রান্ত কাগজপত্র কী লাগে?
+            <svg class="w-5 h-5 transition-transform transform rotate-0 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="hidden px-4 py-3 faq-answer text-gray-600">
+            জমির খতিয়ান, দাখিলা, উত্তরাধিকার সনদ, ভোটার আইডি এবং ওয়ারিশদের কাগজপত্র প্রয়োজন হয়।
+          </div>
+        </div>
+        <div class="border rounded-lg">
+          <button class="w-full px-4 py-3 text-left font-semibold flex justify-between items-center faq-toggle">
+            ভূমি উন্নয়ন কর কোথায় জমা দিতে হয়?
+            <svg class="w-5 h-5 transition-transform transform rotate-0 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="hidden px-4 py-3 faq-answer text-gray-600">
+            ইউনিয়ন ভূমি অফিস অথবা অনলাইনে ভূমি পোর্টাল থেকে ভূমি উন্নয়ন কর জমা দেওয়া যায়। আমরা তা অনলাইনে করে দেই।
+          </div>
+        </div>
+        <div class="border rounded-lg">
+          <button class="w-full px-4 py-3 text-left font-semibold flex justify-between items-center faq-toggle">
+           রেকর্ড তুলতে কী কী কাগজপত্র  লাগে?
+            <svg class="w-5 h-5 transition-transform transform rotate-0 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="hidden px-4 py-3 faq-answer text-gray-600">
+            জমির দাগ নম্বর, খতিয়ান নম্বর এবং জমির মালিকের  নাম পিতার নাম ইত্যাদি প্রয়োজন হয়।
+          </div>
+        </div>
+    <div class="border rounded-lg">
+          <button class="w-full px-4 py-3 text-left font-semibold flex justify-between items-center faq-toggle">
+           জন্ম নিবন্ধন করতে কী কী কাগজপত্র লাগে?
+            <svg class="w-5 h-5 transition-transform transform rotate-0 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="hidden px-4 py-3 faq-answer text-gray-600">
+            জন্মের তারিখ, পিতামাতার পরিচয়পত্র (ভোটার আইডি, জাতীয় পরিচয়পত্র), এবং জন্মের সনদপত্র প্রয়োজন হয়।
+          </div>
+        </div>
+
+        <div class="border rounded-lg">
+          <button class="w-full px-4 py-3 text-left font-semibold flex justify-between items-center faq-toggle">
+            ফটোকপি ও প্রিন্ট সেবা কখন পাওয়া যায়?
+            <svg class="w-5 h-5 transition-transform transform rotate-0 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="hidden px-4 py-3 faq-answer text-gray-600">
+            প্রতিদিন সকাল ৯টা থেকে রাত ৯টা পর্যন্ত আমাদের ফটোকপি ও প্রিন্ট সেবা চালু থাকে।
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-green-900 text-white py-10 mt-12">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6">
+      
+      <!-- দোকানের তথ্য -->
+      <div>
+        <h3 class="text-xl font-semibold mb-3">Yasir Computer</h3>
+        <p>গৌরীপুর বাজার, লালপুর, নাটোর</p>
+        <p>প্রতিদিন: সকাল ৯টা - রাত ৯টা</p>
+        <a href="https://maps.google.com" target="_blank" class="underline text-sm block mt-2">📍 Google Map এ দেখুন</a>
+      </div>
+  
+      <!-- শর্টকাট লিংক -->
+      <div>
+        <h3 class="text-xl font-semibold mb-3">দ্রুত লিংক</h3>
+        <ul class="space-y-1">
+          <li><a href="#services" class="hover:underline">সেবা</a></li>
+          <li><a href="#contact" class="hover:underline">যোগাযোগ</a></li>
+          <li><a href="#faq" class="hover:underline">প্রশ্নোত্তর</a></li>
+        </ul>
+      </div>
+  
+      <!-- যোগাযোগ -->
+      <div>
+        <h3 class="text-xl font-semibold mb-3">যোগাযোগ</h3>
+        <p>📞 <a href="tel:01703877989" class="underline">01703877989</a></p>
+        <p>📞 <a href="tel:01874796348" class="underline">01874796348</a></p>
+        <p>✉️ <a href="mailto:yeasircomputer2@gmail.com" class="underline">yeasircoumpter2@gmail.com</a></p>
+        <p>📘 <a href="https://facebook.com/yourpage" class="underline" target="_blank">Facebook পেইজ</a></p>
+      </div>
+  
+      <!-- পেমেন্ট -->
+      <div>
+        <h3 class="text-xl font-semibold mb-3">পেমেন্ট অপশন</h3>
+        <div class="flex space-x-3 mt-2">
+          <img src="https://logos-world.net/wp-content/uploads/2024/10/Bkash-Logo.png" alt="bKash" class="h-10 w-25">
+          <img src="https://download.logo.wine/logo/Nagad/Nagad-Logo.wine.png" alt="Nagad" class="h-10 w-25">
+         
+        </div>
+      </div>
+    </div>
+  
+    <div class="text-center text-sm mt-8 text-gray-300 border-t border-gray-700 pt-4">
+      &copy; ২০২৫ Yeasir Computer. সর্বস্বত্ব সংরক্ষিত।
+    </div>
+  </footer>
+  
+
+  
+
+  <!-- Scripts -->
+  <script>
+    // FAQ toggle
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const icon = button.querySelector('.faq-icon');
+        answer.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+      });
+    });
+
+    // Scroll animation
+    const faders = document.querySelectorAll('.fade-up');
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => appearOnScroll.observe(fader));
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+// Hamburger Menu Toggle
+document.getElementById('menu-toggle').addEventListener('click', () => {
+  const mobileMenu = document.getElementById('mobile-menu');
+  mobileMenu.classList.toggle('hidden');
+});
+
+
+
+
+  </script>
+</body>
+
+</html>
